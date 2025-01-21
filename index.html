@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Giga:wght@100..900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -59,12 +65,51 @@
           </li>
         </ul>
       </section>
+      <h3 class="projects__title">Here You can check my projects</h3>
       <section class="projects">
-        <h3 class="projects__title">Here You can check my projects</h3>
-        <button type="button">
-          <img src="./img/less-than.png" alt="" width="30" />
-          <img src="./img/greater-than.png" alt="" width="30" />
-        </button>
+        <button type="button" class="projects__prev-button">&lt</button>
+        <ul class="projects__list">
+          <li class="projects__list-element">
+            <p>Sake</p>
+            <a
+              href="https://takumi-sake.netlify.app/"
+              class="projects__list-link"
+              >Link</a
+            >
+          </li>
+          <li class="projects__list-element">
+            <p>Nexino Labs</p>
+            <a href="#" class="projects__list-link">Link</a>
+          </li>
+          <li class="projects__list-element">
+            <p>Programming Services</p>
+            <a href="#" class="projects__list-link">Link</a>
+          </li>
+          <li class="projects__list-element"></li>
+          <li class="projects__list-element"></li>
+          <li class="projects__list-element"></li>
+          <li class="projects__list-element"></li>
+          <li class="projects__list-element"></li>
+          <li class="projects__list-element"></li>
+          <li class="projects__list-element"></li>
+        </ul>
+        <button type="button" class="projects__next-button">&gt</button>
+      </section>
+
+      <section class="skills">
+        <h3 class="skills__title">My Skills</h3>
+        <ul class="skills__list">
+          <li class="skills__list-element">HTML5</li>
+          <li class="skills__list-element">CSS3</li>
+          <li class="skills__list-element">JavaScript</li>
+          <li class="skills__list-element">RWD</li>
+          <li class="skills__list-element">Git</li>
+          <li class="skills__list-element">GitHub</li>
+          <li class="skills__list-element">React</li>
+          <li class="skills__list-element">WordPress- basic</li>
+          <li class="skills__list-element">English - B2</li>
+          <li class="skills__list-element">Polish - native speaker</li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
@@ -98,5 +143,6 @@
     </section>
 
     <script src="./js/menu-mobile.js"></script>
+    <script src="./js/scroll-box.js"></script>
   </body>
 </html>

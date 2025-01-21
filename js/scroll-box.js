@@ -1,6 +1,17 @@
-const projectsList = document.querySelector(".projects__list");
+const prevButton = document.querySelector(".projects__prev-button");
+const nextButton = document.querySelector(".projects__next-button");
+const project = document.querySelector(".projects__list");
 
-function createList() {
-  const element = document.createElement("li");
-  element.classList.add("projects__list-element");
-}
+prevButton.addEventListener("click", () => {
+  project.scrollBy({
+    left: -300,
+    behavior: "smooth",
+  });
+});
+
+nextButton.addEventListener("click", () => {
+  project.scrollBy({
+    left: 300,
+    behavior: "smooth",
+  });
+});
