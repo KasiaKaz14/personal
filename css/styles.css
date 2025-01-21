@@ -1,0 +1,246 @@
+:root {
+  --blue: #3871cc;
+  --dark: #000000;
+  --main-font-color: aliceblue;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right bottom, var(--dark), var(--blue));
+}
+
+/* styles for mobile menu */
+
+.icon-svg-hamburger {
+  color: var(--main-font-color);
+  @media screen and (min-width: 1200px) {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+}
+
+.icon-svg-close {
+  width: 28px;
+  height: 28px;
+}
+
+.page-header {
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
+    0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+
+.page-header .container {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu {
+  @media (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.menu .link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  min-height: 40px;
+  min-width: 50px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right bottom, var(--dark), var(--blue));
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-top: 4px;
+  @media screen and (min-width: 1200px) {
+    right: 10px;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  z-index: 999;
+  background: linear-gradient(to right bottom, var(--dark), var(--blue));
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  flex-shrink: 0;
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin: 112px 79px;
+  @media screen and (max-width: 767px) {
+    margin-right: 43px;
+  }
+}
+
+.mobile-menu .link {
+  display: block;
+  color: var(--main-font-color);
+  text-decoration: none;
+  font-size: 25px;
+  text-align: center;
+  margin: 30px;
+  width: 190px;
+  border-radius: 15px;
+}
+
+.js-close-menu {
+  color: #212121;
+}
+
+header {
+  width: 100%;
+  height: 35%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35);
+}
+
+.website-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  padding-top: 95px;
+}
+
+.website-name a {
+  text-decoration: none;
+  color: var(--main-font-color);
+  font-size: 25px;
+}
+
+.header-title {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  color: var(--main-font-color);
+}
+
+.main-section {
+  width: 100%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.35)
+  );
+}
+
+.main-section__title {
+  padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+  color: var(--main-font-color);
+}
+
+.main-section__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 10px;
+  color: var(--main-font-color);
+  list-style: none;
+}
+
+.main-section__list-element {
+  width: 320px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right bottom, var(--dark), var(--blue));
+}
+
+.projects {
+  width: 100%;
+
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.65)
+  );
+}
+
+.projects__title {
+  display: flex;
+  justify-content: center;
+  color: var(--main-font-color);
+}
+
+.footer {
+  width: 100%;
+  box-shadow: 10px 0 10px 0 rgba(0, 0, 0, 0.35);
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.45)
+  );
+}
+
+.footer__title {
+  padding-top: 20px;
+  padding-left: 20px;
+  color: var(--main-font-color);
+  font-size: 20px;
+}
