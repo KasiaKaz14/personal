@@ -219,6 +219,7 @@ header {
   margin: 50px auto;
   border-radius: 15px;
   background-color: #000000;
+  overflow: hidden;
 }
 
 .projects__title {
