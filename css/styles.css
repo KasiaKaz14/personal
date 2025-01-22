@@ -251,6 +251,12 @@ header {
     color: var(--main-font-color);
     text-decoration: none;
   }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: #3871cc;
+  }
 }
 
 .fav__list {
@@ -424,6 +430,9 @@ header {
   padding: 20px 0;
   background: linear-gradient (to left, var(--dark), var(--blue));
   background-color: #212121;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .skills__title {
@@ -432,6 +441,12 @@ header {
   align-items: center;
   margin-bottom: 15px;
   color: var(--main-font-color);
+  @media screen and (min-width: 768px) {
+    margin-right: 346px;
+    margin-left: 126px;
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
 }
 
 .skills__list {
@@ -442,6 +457,9 @@ header {
   flex-wrap: wrap;
   gap: 15px;
   list-style: none;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
 }
 
 .skills__list-element {
@@ -451,6 +469,9 @@ header {
   color: var(--main-font-color);
   box-shadow: 0 0 5px 0 rgba(4, 57, 123, 0.75);
   border-radius: 5px;
+  @media screen and (min-width: 768px) {
+    width: 215px;
+  }
 }
 
 .footer {
