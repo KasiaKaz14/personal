@@ -17,6 +17,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  overflow: hidden;
+}
+
 /* styles for mobile menu */
 
 .icon-svg-hamburger {
@@ -288,7 +292,7 @@ header {
 }
 
 .skills {
-  padding: 20px 20px;
+  padding: 20px 0;
   background: linear-gradient (to left, var(--dark), var(--blue));
   background-color: #212121;
 }
@@ -304,13 +308,15 @@ header {
 .skills__list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 15px;
   list-style: none;
 }
 
 .skills__list-element {
-  width: 200px;
+  width: 180px;
   height: 40px;
   padding: 10px;
   color: var(--main-font-color);
