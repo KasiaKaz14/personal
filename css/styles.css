@@ -218,42 +218,42 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 60vw;
+  width: 70vw;
   margin: 50px auto;
   border-radius: 15px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right bottom,
     rgba(0, 0, 0, 0.35),
     rgba(0, 0, 0, 0.65)
-  );
+  ); */
+  background-color: #000000;
 }
 
 .projects__title {
   display: flex;
   justify-content: center;
   padding-top: 15px;
+  margin-bottom: 30px;
   color: var(--main-font-color);
 }
 
 .projects__list {
   display: flex;
   border-radius: 15px;
-
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9);
   overflow: hidden;
   list-style: none;
 }
 
 .projects__list-element {
-  min-width: 300px;
+  min-width: 330px;
   min-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #f0f0f0;
-  border: 1px solid #ccc;
+  background: linear-gradient(to bottom, var(--dark), rgba(27, 54, 150, 0.115));
 }
 
 .projects__list-link {
@@ -261,6 +261,7 @@ header {
   background: linear-gradient(to right, var(--dark), rgb(235, 81, 138));
   border-radius: 5px;
   padding: 10px 20px;
+  margin-bottom: 10px;
   text-decoration: none;
   cursor: pointer;
 }
@@ -279,16 +280,25 @@ header {
 }
 
 .projects__prev-button {
-  left: 2px;
+  left: 0;
 }
 
 .projects__next-button {
-  right: 2px;
+  right: 0;
+}
+
+.projects__photos {
+  width: 270px;
+  height: 450px;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .skills {
-  padding: 20px 2px;
-  background: linear-gradient(to left, var(--dark), var(--blue));
+  padding: 20px 20px;
+  background: linear-gradient (to left, var(--dark), var(--blue));
+  background-color: #212121;
 }
 
 .skills__title {
@@ -303,12 +313,12 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
   list-style: none;
 }
 
 .skills__list-element {
-  width: 230px;
+  width: 200px;
   height: 40px;
   padding: 10px;
   color: var(--main-font-color);
@@ -318,6 +328,7 @@ header {
 
 .footer {
   width: 100%;
+  height: 95vh;
   box-shadow: 10px 0 10px 0 rgba(0, 0, 0, 0.35);
   background-color: var(--dark);
 }
@@ -326,5 +337,79 @@ header {
   padding-top: 20px;
   padding-left: 20px;
   color: var(--main-font-color);
-  font-size: 20px;
+  font-size: 25px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+.footer__link {
+  color: var(--main-font-color);
+  text-decoration: none;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: 400px;
+  height: 460px;
+  margin: 20px 25px 10px 25px;
+  border-radius: 5px;
+  background: linear-gradient(to right bottom, var(--dark), #3871cc);
+  /* border: 1px solid var(--main-font-color); */
+}
+
+.footer__form-input {
+  text-align: center;
+  width: 350px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: var(--main-font-color);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background: none;
+}
+
+.footer__form-textarea {
+  text-align: center;
+  font-size: 15px;
+  width: 350px;
+  height: 150px;
+  border: none;
+  outline: none;
+  color: var(--main-font-color);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background: none;
+}
+
+.footer__form-input::placeholder,
+.footer__form-textarea::placeholder {
+  color: var(--main-font-color);
+}
+
+.footer__button {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-font-color);
+  background: linear-gradient(to right, var(--dark), rgb(235, 81, 138));
+  border-radius: 5px;
+  padding: 10px 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.rights {
+  display: flex;
+  justify-content: center;
+  padding: 17px;
+  color: red;
 }

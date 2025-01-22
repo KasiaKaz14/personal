@@ -65,12 +65,17 @@
           </li>
         </ul>
       </section>
+
       <h3 class="projects__title">Here You can check my projects</h3>
       <section class="projects">
         <button type="button" class="projects__prev-button">&lt</button>
         <ul class="projects__list">
           <li class="projects__list-element">
-            <p>Sake</p>
+            <img
+              src="./img/takumi-sake.png"
+              alt="Takumi-Sake Website"
+              class="projects__photos"
+            />
             <a
               href="https://takumi-sake.netlify.app/"
               class="projects__list-link"
@@ -78,20 +83,62 @@
             >
           </li>
           <li class="projects__list-element">
-            <p>Nexino Labs</p>
+            <img
+              src="./img/nexino-labs.png"
+              alt="Nexino Labs Website"
+              class="projects__photos"
+            />
             <a href="#" class="projects__list-link">Link</a>
           </li>
           <li class="projects__list-element">
-            <p>Programming Services</p>
+            <img
+              src="./img/programming-services.png"
+              alt="Programming Services Website"
+              class="projects__photos"
+            />
             <a href="#" class="projects__list-link">Link</a>
           </li>
-          <li class="projects__list-element"></li>
-          <li class="projects__list-element"></li>
-          <li class="projects__list-element"></li>
-          <li class="projects__list-element"></li>
-          <li class="projects__list-element"></li>
-          <li class="projects__list-element"></li>
-          <li class="projects__list-element"></li>
+          <li class="projects__list-element">
+            <img
+              src="./img/unit-converter.png"
+              alt="Unit Converter"
+              class="projects__photos"
+            />
+            <a href="#" class="projects__list-link">Link</a>
+          </li>
+          <li class="projects__list-element">
+            <img
+              src="./img/phonebook.png"
+              alt="Phonebook React"
+              class="projects__photos"
+            />
+            <a href="#" class="projects__list-link">Link</a>
+          </li>
+
+          <li class="projects__list-element">
+            <img
+              src="./img/calendar.png"
+              alt="Calendar"
+              class="projects__photos"
+            />
+            <a href="#" class="projects__list-link">Link</a>
+          </li>
+          <li class="projects__list-element">
+            <img
+              src="./img/grid-section.png"
+              alt="Grid Section"
+              class="projects__photos"
+            />
+            <a href="#" class="projects__list-link">Link</a>
+          </li>
+          <li class="projects__list-element">
+            <img
+              src="./img/gsection-2.png"
+              alt="Grid Section"
+              class="projects__photos"
+            />
+            <a href="#" class="projects__list-link">Link</a>
+          </li>
         </ul>
         <button type="button" class="projects__next-button">&gt</button>
       </section>
@@ -114,8 +161,32 @@
     </main>
     <footer class="footer">
       <h4 class="footer__title">Dark And Blue</h4>
-      <a href="#">About</a>
+      <section class="footer__links">
+        <a href="./index.html" class="footer__link">Home</a>
+        <a href="#" class="footer__link">GitHub</a>
+      </section>
+      <section class="footer__form" id="footerForm">
+        <h4 class="footer__title">Send a message:</h4>
+        <input
+          type="text"
+          placeholder="Your Name.."
+          class="footer__form-input"
+        />
+        <input
+          type="text"
+          placeholder="Your Email.."
+          class="footer__form-input"
+        />
+        <textarea
+          name=""
+          placeholder="Your Message.."
+          class="footer__form-textarea"
+        ></textarea>
+        <button type="submit" class="footer__button">Send</button>
+      </section>
     </footer>
+
+    <p class="rights">© 2025 Katarzyna. All Rights Reserved.</p>
 
     <section class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
@@ -144,5 +215,6 @@
 
     <script src="./js/menu-mobile.js"></script>
     <script src="./js/scroll-box.js"></script>
+    <script src="./js/email.js"></script>
   </body>
 </html>

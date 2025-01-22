@@ -4,14 +4,14 @@ const project = document.querySelector(".projects__list");
 
 prevButton.addEventListener("click", () => {
   project.scrollBy({
-    left: -300,
+    left: -330,
     behavior: "smooth",
   });
 });
 
 nextButton.addEventListener("click", () => {
   project.scrollBy({
-    left: 300,
+    left: 330,
     behavior: "smooth",
   });
 });
