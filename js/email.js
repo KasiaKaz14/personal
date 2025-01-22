@@ -2,42 +2,34 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("config.json")
     .then((response) => response.json())
     .then((config) => {
+      // Inicjalizacja EmailJS z kluczem z pliku konfiguracyjnego
       emailjs.init(config.user_id);
 
+      // Obsługa formularza
       document
         .getElementById("footer-form")
         .addEventListener("submit", function (event) {
           event.preventDefault();
 
-          const name = document.getElementById("name").value.trim();
-          const email = document.getElementById("email").value.trim();
-          const message = document.getElementById("message").value.trim();
-
-          if (!name || !email || !message) {
-            alert("Please fill in all fields.");
-            return;
-          }
-
-          if (!/\S+@\S+\.\S+/.test(email)) {
-            alert("Please enter a valid email address.");
-            return;
-          }
-
-          const formData = { from_name: name, from_email: email, message };
+          const formData = {
+            from_name: document.getElementById("name").value,
+            from_email: document.getElementById("email").value,
+            message: document.getElementById("message").value,
+          };
 
           emailjs.send(config.service_id, config.template_id, formData).then(
-            function () {
-              alert("Message sent successfully!");
+            function (response) {
+              alert("Wiadomość wysłana pomyślnie!");
               document.getElementById("footer-form").reset();
             },
             function (error) {
-              alert("Failed to send message. Please try again.");
-              console.error(error);
+              alert("Nie udało się wysłać wiadomości.");
+              console.log(error);
             }
           );
         });
     })
     .catch((error) => {
-      console.error("Error loading configuration:", error);
+      console.error("Błąd w ładowaniu konfiguracji:", error);
     });
 });
