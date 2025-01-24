@@ -13,62 +13,276 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <h4 class="website-name">
-        <a href="./index.html">Dark And Blue</a>
-      </h4>
+    <section class="container">
+      <header>
+        <section class="title">
+          <h4 class="website-name">
+            <a href="./index.html">Dark And Blue</a>
+          </h4>
 
-      <h2 class="header-title">Fullstack Developer</h2>
+          <h2 class="header-title">Fullstack Developer</h2>
+        </section>
 
-      <nav class="nav">
-        <ul class="nav__list">
-          <li><a href="./index.html" class="nav__link">Home</a></li>
-          <!-- <li><a href="./about.html" class="link">About</a></li> -->
-          <li>
-            <a href="https://github.com/KasiaKaz14" class="nav__link">GitHub</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="./index.html" class="nav__link">Home</a></li>
+            <!-- <li><a href="./about.html" class="link">About</a></li> -->
+            <li>
+              <a href="https://github.com/KasiaKaz14" class="nav__link"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
 
-      <section class="fav-section">
-        <ul class="fav__list">
-          <li class="fav__list-element">
-            <img src="./img/web development.gif" alt="" class="fav__favicon" />
-          </li>
-          <li class="fav__list-element">
-            <img src="./img/computer.png" alt="" class="fav__favicon" />
-          </li>
-          <li class="fav__list-element">
-            <img src="./img/keyboard.png" alt="" class="fav__favicon" />
-          </li>
-          <li class="fav__list-element">
-            <img src="./img/web.png" alt="" class="fav__favicon" />
-          </li>
-        </ul>
-      </section>
+        <section class="fav-section">
+          <ul class="fav__list">
+            <li class="fav__list-element">
+              <img
+                src="./img/web development.gif"
+                alt=""
+                class="fav__favicon"
+              />
+            </li>
+            <li class="fav__list-element">
+              <img src="./img/computer.png" alt="" class="fav__favicon" />
+            </li>
+            <li class="fav__list-element">
+              <img src="./img/keyboard.png" alt="" class="fav__favicon" />
+            </li>
+            <li class="fav__list-element">
+              <img src="./img/web.png" alt="" class="fav__favicon" />
+            </li>
+          </ul>
+        </section>
 
-      <section class="container">
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
+        <section class="container">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="icon-svg-hamburger"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <ul class="menu">
+            <li><a href="./index.html" class="link">Home</a></li>
+            <li><a href="./about.html" class="link">About</a></li>
+            <li>
+              <a href="https://github.com/KasiaKaz14" class="link">GitHub</a>
+            </li>
+          </ul>
+        </section>
+      </header>
+      <main>
+        <section class="main-section">
+          <h4 class="main-section__title">Who am I?</h4>
+          <ul class="main-section__list">
+            <li class="main-section__list-element">
+              Junior Fullstack Developer
+            </li>
+            <li class="main-section__list-element">
+              Interested in building websites
+            </li>
+            <li class="main-section__list-element">
+              Has been passionate about programming for about two years
+            </li>
+            <li class="main-section__list-element">Football lover</li>
+            <li class="main-section__list-element">
+              Loves to learn new technologies
+            </li>
+          </ul>
+          <h4 class="main-section__title">Why choose me?</h4>
+          <ul class="main-section__list">
+            <li class="main-section__list-element">
+              Building websites is my passion
+            </li>
+            <li class="main-section__list-element">Ready to work hard</li>
+            <li class="main-section__list-element">
+              I am constantly learning and expanding my knowledge
+            </li>
+            <li class="main-section__list-element">
+              I am making websites as user friendly as possible
+            </li>
+            <li class="main-section__list-element">
+              I am meticulous during working with projects
+            </li>
+          </ul>
+        </section>
+
+        <h3 class="projects__title">Here you can check my projects</h3>
+        <section class="projects">
+          <button type="button" class="projects__prev-button">&lt</button>
+          <ul class="projects__list">
+            <li class="projects__list-element">
+              <img
+                src="./img/takumi-sake.png"
+                alt="Takumi-Sake Website"
+                class="projects__photos"
+              />
+              <a
+                href="https://takumi-sake.netlify.app/"
+                class="projects__list-link"
+                >Link</a
+              >
+            </li>
+            <li class="projects__list-element">
+              <img
+                src="./img/nexino-labs.png"
+                alt="Nexino Labs Website"
+                class="projects__photos"
+              />
+              <a href="#" class="projects__list-link">Link</a>
+            </li>
+            <li class="projects__list-element">
+              <img
+                src="./img/programming-services.png"
+                alt="Programming Services Website"
+                class="projects__photos"
+              />
+              <a href="#" class="projects__list-link">Link</a>
+            </li>
+            <li class="projects__list-element">
+              <img
+                src="./img/unit-converter.png"
+                alt="Unit Converter"
+                class="projects__photos"
+              />
+              <a href="#" class="projects__list-link">Link</a>
+            </li>
+            <li class="projects__list-element">
+              <img
+                src="./img/phonebook.png"
+                alt="Phonebook React"
+                class="projects__photos"
+              />
+              <a href="#" class="projects__list-link">Link</a>
+            </li>
+
+            <li class="projects__list-element">
+              <img
+                src="./img/calendar.png"
+                alt="Calendar"
+                class="projects__photos"
+              />
+              <a href="#" class="projects__list-link">Link</a>
+            </li>
+            <li class="projects__list-element">
+              <img
+                src="./img/grid-section.png"
+                alt="Grid Section"
+                class="projects__photos"
+              />
+              <a href="#" class="projects__list-link">Link</a>
+            </li>
+            <li class="projects__list-element">
+              <img
+                src="./img/gsection-2.png"
+                alt="Grid Section"
+                class="projects__photos"
+              />
+              <a href="#" class="projects__list-link">Link</a>
+            </li>
+          </ul>
+          <button type="button" class="projects__next-button">&gt</button>
+        </section>
+
+        <section class="skills">
+          <h3 class="skills__title">My Skills</h3>
+          <ul class="skills__list">
+            <li class="skills__list-element">HTML5</li>
+            <li class="skills__list-element">CSS3</li>
+            <li class="skills__list-element">JavaScript</li>
+            <li class="skills__list-element">RWD</li>
+            <li class="skills__list-element">Git</li>
+            <li class="skills__list-element">GitHub</li>
+            <li class="skills__list-element">React</li>
+            <li class="skills__list-element">WordPress- basic</li>
+            <li class="skills__list-element">English - B2</li>
+            <li class="skills__list-element">Polish - native speaker</li>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer">
+        <section class="footer__title-link">
+          <h4 class="footer__title">Dark And Blue</h4>
+          <section class="footer__links">
+            <a href="./index.html" class="footer__link">Home</a>
+            <a href="https://github.com/KasiaKaz14" class="footer__link"
+              >GitHub</a
+            >
+          </section>
+
+          <h4 class="footer__contact-title">Contact</h4>
+          <section class="footer__contact">
+            <a
+              href="https://www.linkedin.com/in/katarzyna-kazmierczak-a9b63b294/"
+              class="footer__contact-link"
+              >LinkedIn</a
+            >
+            <a
+              href="mailto: kasiakazmierczak99@gmail.com"
+              class="footer__contact-link"
+              >kasiakazmierczak99@gmail.com</a
+            >
+          </section>
+        </section>
+        <form class="footer__form" id="footer-form">
+          <h4 class="footer__form-title">Send a message:</h4>
+          <input
+            type="text"
+            placeholder="Your Name.."
+            class="footer__form-input"
+            id="name"
+          />
+          <input
+            type="text"
+            placeholder="Your Email.."
+            class="footer__form-input"
+            id="email"
+          />
+          <textarea
+            id="message"
+            placeholder="Your Message.."
+            class="footer__form-textarea"
+          ></textarea>
+          <button type="submit" class="footer__button">Send</button>
+        </form>
+      </footer>
+
+      <p class="rights">© 2025 Katarzyna. All Rights Reserved.</p>
+
+      <section class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
           <svg
-            class="icon-svg-hamburger"
-            width="24"
-            height="24"
-            fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            class="icon-svg-close"
+            fill="whitesmoke"
           >
             <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
+              fill-rule="whitesmoke"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="whitesmoke"
             ></path>
           </svg>
         </button>
-        <ul class="menu">
+
+        <ul class="mobile-menu">
           <li><a href="./index.html" class="link">Home</a></li>
           <li><a href="./about.html" class="link">About</a></li>
           <li>
@@ -76,214 +290,14 @@
           </li>
         </ul>
       </section>
-    </header>
-    <main>
-      <section class="main-section">
-        <h4 class="main-section__title">Who am I?</h4>
-        <ul class="main-section__list">
-          <li class="main-section__list-element">Junior Fullstack Developer</li>
-          <li class="main-section__list-element">
-            Interested in building websites
-          </li>
-          <li class="main-section__list-element">
-            Has been passionate about programming about two years
-          </li>
-          <li class="main-section__list-element">Football lover</li>
-          <li class="main-section__list-element">
-            Loves to learn new technologies
-          </li>
-        </ul>
-        <h4 class="main-section__title">Why choose me?</h4>
-        <ul class="main-section__list">
-          <li class="main-section__list-element">
-            Building websites is my passion
-          </li>
-          <li class="main-section__list-element">Ready to work hard</li>
-          <li class="main-section__list-element">
-            I am constantly learning and expanding my knowledge
-          </li>
-          <li class="main-section__list-element">
-            Try to make websites as user friendly as possible
-          </li>
-          <li class="main-section__list-element">
-            I am meticulous during working with projects
-          </li>
-        </ul>
-      </section>
 
-      <h3 class="projects__title">Here You can check my projects</h3>
-      <section class="projects">
-        <button type="button" class="projects__prev-button">&lt</button>
-        <ul class="projects__list">
-          <li class="projects__list-element">
-            <img
-              src="./img/takumi-sake.png"
-              alt="Takumi-Sake Website"
-              class="projects__photos"
-            />
-            <a
-              href="https://takumi-sake.netlify.app/"
-              class="projects__list-link"
-              >Link</a
-            >
-          </li>
-          <li class="projects__list-element">
-            <img
-              src="./img/nexino-labs.png"
-              alt="Nexino Labs Website"
-              class="projects__photos"
-            />
-            <a href="#" class="projects__list-link">Link</a>
-          </li>
-          <li class="projects__list-element">
-            <img
-              src="./img/programming-services.png"
-              alt="Programming Services Website"
-              class="projects__photos"
-            />
-            <a href="#" class="projects__list-link">Link</a>
-          </li>
-          <li class="projects__list-element">
-            <img
-              src="./img/unit-converter.png"
-              alt="Unit Converter"
-              class="projects__photos"
-            />
-            <a href="#" class="projects__list-link">Link</a>
-          </li>
-          <li class="projects__list-element">
-            <img
-              src="./img/phonebook.png"
-              alt="Phonebook React"
-              class="projects__photos"
-            />
-            <a href="#" class="projects__list-link">Link</a>
-          </li>
-
-          <li class="projects__list-element">
-            <img
-              src="./img/calendar.png"
-              alt="Calendar"
-              class="projects__photos"
-            />
-            <a href="#" class="projects__list-link">Link</a>
-          </li>
-          <li class="projects__list-element">
-            <img
-              src="./img/grid-section.png"
-              alt="Grid Section"
-              class="projects__photos"
-            />
-            <a href="#" class="projects__list-link">Link</a>
-          </li>
-          <li class="projects__list-element">
-            <img
-              src="./img/gsection-2.png"
-              alt="Grid Section"
-              class="projects__photos"
-            />
-            <a href="#" class="projects__list-link">Link</a>
-          </li>
-        </ul>
-        <button type="button" class="projects__next-button">&gt</button>
-      </section>
-
-      <section class="skills">
-        <h3 class="skills__title">My Skills</h3>
-        <ul class="skills__list">
-          <li class="skills__list-element">HTML5</li>
-          <li class="skills__list-element">CSS3</li>
-          <li class="skills__list-element">JavaScript</li>
-          <li class="skills__list-element">RWD</li>
-          <li class="skills__list-element">Git</li>
-          <li class="skills__list-element">GitHub</li>
-          <li class="skills__list-element">React</li>
-          <li class="skills__list-element">WordPress- basic</li>
-          <li class="skills__list-element">English - B2</li>
-          <li class="skills__list-element">Polish - native speaker</li>
-        </ul>
-      </section>
-    </main>
-    <footer class="footer">
-      <section class="footer__title-link">
-        <h4 class="footer__title">Dark And Blue</h4>
-        <section class="footer__links">
-          <a href="./index.html" class="footer__link">Home</a>
-          <a href="https://github.com/KasiaKaz14" class="footer__link"
-            >GitHub</a
-          >
-        </section>
-
-        <h4 class="footer__contact-title">Contact</h4>
-        <section class="footer__contact">
-          <a
-            href="https://www.linkedin.com/in/katarzyna-kazmierczak-a9b63b294/"
-            class="footer__contact-link"
-            >LinkedIn</a
-          >
-          <a
-            href="mailto: kasiakazmierczak99@gmail.com"
-            class="footer__contact-link"
-            >kasiakazmierczak99@gmail.com</a
-          >
-        </section>
-      </section>
-      <form class="footer__form" id="footer-form">
-        <h4 class="footer__form-title">Send a message:</h4>
-        <input
-          type="text"
-          placeholder="Your Name.."
-          class="footer__form-input"
-          id="name"
-        />
-        <input
-          type="text"
-          placeholder="Your Email.."
-          class="footer__form-input"
-          id="email"
-        />
-        <textarea
-          id="message"
-          placeholder="Your Message.."
-          class="footer__form-textarea"
-        ></textarea>
-        <button type="submit" class="footer__button">Send</button>
-      </form>
-    </footer>
-
-    <p class="rights">© 2025 Katarzyna. All Rights Reserved.</p>
-
-    <section class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          class="icon-svg-close"
-          fill="whitesmoke"
-        >
-          <path
-            fill-rule="whitesmoke"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="whitesmoke"
-          ></path>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu">
-        <li><a href="./index.html" class="link">Home</a></li>
-        <li><a href="./about.html" class="link">About</a></li>
-        <li><a href="https://github.com/KasiaKaz14" class="link">GitHub</a></li>
-      </ul>
+      <script
+        type="module"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.3.0/dist/email.min.js"
+      ></script>
+      <script src="./js/menu-mobile.js"></script>
+      <script src="./js/scroll-box.js"></script>
+      <script src="./js/email.js"></script>
     </section>
-
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.3.0/dist/email.min.js"
-    ></script>
-    <script src="./js/menu-mobile.js"></script>
-    <script src="./js/scroll-box.js"></script>
-    <script src="./js/email.js"></script>
   </body>
 </html>
