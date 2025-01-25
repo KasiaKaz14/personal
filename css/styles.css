@@ -203,6 +203,7 @@ header {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35);
   @media screen and (min-width: 768px) {
     height: 400px;
+    position: relative;
   }
 }
 
@@ -237,13 +238,15 @@ header {
   @media screen and (max-width: 767px) {
     display: none;
   }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 30px;
+    right: 100px;
+  }
 }
 
 .nav__list {
   @media screen and (min-width: 768px) {
-    position: absolute;
-    top: 20px;
-    right: 300px;
     display: flex;
     flex-direction: row;
     gap: 25px;
