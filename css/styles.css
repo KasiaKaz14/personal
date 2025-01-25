@@ -348,8 +348,7 @@ header {
 
 .projects {
   position: relative;
-
-  background-color: #000000;
+  background: linear-gradient(to bottom, var(--dark), rgba(27, 54, 150, 0.115));
   overflow: hidden;
   @media screen and (max-width: 767px) {
     width: 330px;
@@ -372,7 +371,7 @@ header {
 .projects__list {
   display: flex;
   border-radius: 15px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9);
+  /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9); */
   overflow: hidden;
   list-style: none;
 }
@@ -384,7 +383,6 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to bottom, var(--dark), rgba(27, 54, 150, 0.115));
 }
 
 .projects__list-link {
